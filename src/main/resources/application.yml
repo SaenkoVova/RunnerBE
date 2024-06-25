@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: runner
+  datasource:
+    url: jdbc:postgresql://localhost:5432/vsrunner
+    username: postgres
+    password: djdfy12345
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: vova080520@gmail.com
+    password: ygiy bnzn oabj hdee
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  servlet:
+    multipart:
+      max-file-size: 10000KB
+      max-request-size: 10000KB
